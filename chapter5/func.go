@@ -25,7 +25,7 @@ func main() {
 	tim.notify()
 	tim.hello()
 
-	cock := users{name: "cock", email: "cock@email.com"}
+	cock := &users{"cock", "cock@email.com"}
 	cock.notify()
 	cock.changeEmail("change@email.com")
 	cock.notify()
